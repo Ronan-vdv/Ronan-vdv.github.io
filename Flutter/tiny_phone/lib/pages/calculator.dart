@@ -20,7 +20,7 @@ class _CalculatorState extends State<Calculator> {
     const numButtonCol = Color.fromARGB(255, 102, 102, 102);
     const actionButtonCol = Colors.orange;
     const double displayFontSize = 50;
-    const double horPadding = 20;
+    const double horPadding = 15;
     const double vertPadding = 5;
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 41, 41, 41),
@@ -290,8 +290,8 @@ class CalculatorKey extends StatefulWidget {
 class _CalculatorKeyState extends State<CalculatorKey> {
   @override
   Widget build(BuildContext context) {
-    const double buttonSize = 50;
-    const double fontSize = 20;
+    const double buttonSize = 70;
+    const double fontSize = 30;
     return Padding(
       padding: const EdgeInsets.only(left: 10),
       child: InkWell(
