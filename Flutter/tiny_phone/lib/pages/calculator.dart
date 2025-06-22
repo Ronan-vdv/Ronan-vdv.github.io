@@ -290,8 +290,8 @@ class CalculatorKey extends StatefulWidget {
 class _CalculatorKeyState extends State<CalculatorKey> {
   @override
   Widget build(BuildContext context) {
-    const double buttonSize = 90;
-    const double fontSize = 40;
+    const double buttonSize = 70;
+    const double fontSize = 30;
     return Padding(
       padding: const EdgeInsets.only(left: 10),
       child: InkWell(
