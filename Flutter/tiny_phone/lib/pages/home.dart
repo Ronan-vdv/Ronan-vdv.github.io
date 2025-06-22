@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:tiny_phone/pages/Simplist.dart';
+import 'package:tiny_phone/pages/calculator.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -46,9 +47,16 @@ class _HomeState extends State<Home> {
                         imagePath: 'images/SimplistIcon.png'),
                   ),
                   const SizedBox(width: 20),
-                  // const AppIcon(
-                  //     title: 'Calculator',
-                  //     imagePath: 'images/CalculatorIcon.png'),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        currentPage = const Calculator();
+                      });
+                    },
+                    child: const AppIcon(
+                        title: 'Calculator',
+                        imagePath: 'images/CalculatorIcon.png'),
+                  ),
                 ],
               ),
             ],
@@ -117,3 +125,4 @@ class AppIcon extends StatelessWidget {
     );
   }
 }
+
